@@ -1,0 +1,9 @@
+Run this command to in powershell to create a standalone exe for the python script:
+
+pyinstaller -w --onefile a_py_script.py
+
+This way won't open a separate cmd shell when run but putting this:
+
+pyinstaller --noconsole --onefile a_py_script.py
+
+will create a separate cmd window which may not be user friendly 
